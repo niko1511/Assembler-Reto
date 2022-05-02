@@ -4,24 +4,26 @@
   margin: 0;
 }
 
+
 body {
   margin: 0;
   margin-bottom: 40px;
   overflow-x: hidden;
+
 }
 
 /* TODO:  */ /****style header ****/
 /********************/
 header {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #333;
   position: relative;
-  width: 100%;
-  height: 80px;
+  width: 100vw;
+
   padding-bottom: 15px;
 }
 
@@ -69,16 +71,48 @@ header li a {
 /* Change the link color to #111 (black) on hover */
 header li a:hover {
   border-radius: 20px;
-
   background-color: #111;
+  transition: 1s;
 }
 
 /*change style font*/
 #nav {
-  /* font-style: italic; */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+  z-index: 2;
+}
 
+#nav ul {
+  padding: 0;
+  margin: 0;
+}
 
+#nav li {
+  position: relative;
+  float: left;
+  list-style-type: none;
+  overflow: hidden;
+}
+#nav li:hover {
+  transition: 1s;
+  overflow: inherit;
+}
+
+#nav ul ul {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background: #333;
+  border-radius: 10px;
+}
+
+#nav ul ul a {
+  text-align: center;
+  padding: 2px 2px;
+  font-size: 13px;
+}
+#nav ul ul a:hover {
+  position: relative;
+  background: Red;
 }
 
 #searchcontainer {
@@ -97,7 +131,7 @@ header li a:hover {
 input[type="search"] {
   position: absolute;
   top: 20px;
-  right: 10px;
+  right: 20px;
   border-radius: 20px;
   color: white;
   text-align: left;
@@ -106,6 +140,7 @@ input[type="search"] {
   height: 30px;
   width: 71px;
   transition: 1s;
+  z-index: 2;
 }
 
 input[type="search"]:hover {
@@ -123,15 +158,15 @@ input[type="search"]:hover {
 
 /*change color favicon search*/
 #searchcontainer i {
+  transition: 1s;
   padding-top: 40px;
-  padding-right: 35px;
+  padding-right: 45px;
   color: white;
 }
 
 /* TODO:  */ /****style Container ****/
 /********************/
 #content {
-  transition: 1s;
   padding-top: 81px;
   display: flex;
   flex-direction: row;
@@ -184,7 +219,7 @@ input[type="search"]:hover {
 .navigation-auto {
   position: absolute;
   display: flex;
-  width: 800px;
+  width: 80px;
   justify-content: center;
   margin-top: 460px;
 }
@@ -213,11 +248,9 @@ input[type="search"]:hover {
   cursor: pointer;
   transition: 1s;
 }
-#btn:hover{
+#btn:hover {
   background-color: Red;
-
 }
-
 
 .manual-btn:not(:last-child) {
   margin-right: 40px;
@@ -237,10 +270,6 @@ input[type="search"]:hover {
 }
 /*end navigation*/
 
-
-
-
-
 /*arrow slider screen*/
 #arrow {
   width: 100%;
@@ -254,28 +283,31 @@ input[type="search"]:hover {
   box-shadow: 2px 10px 20px #999;
   overflow: hidden;
 
-
 }
-.slider-tab-off #arrow{
-
+.slider-tab-off #arrow {
   transition: 1s;
   border-bottom: 3px solid Red;
-  padding-bottom: 10px
-  }
+
+  padding-bottom: 10px;
+}
 #arrow a {
   cursor: pointer;
-
-
 }
 
 .slider-tab-off #arrow a {
   padding-top: 10px;
   padding: 2%;
   margin-left: 40%;
-  transform: rotate(65deg);
   border: 3px solid Red;
+
 }
 
+#line{
+  position: relative;
+  padding: 3px;
+  border-bottom: 10px solid #111;
+  z-index: 0;
+}
 
 #arrow #logo1 {
   color: white;
@@ -289,31 +321,35 @@ input[type="search"]:hover {
 
 /* control tab for var js changevalue 0% to 28%*/
 /*close tap*/
+.slider-tab {
+  transition: 1s;
+  right: -84.5vw;
 
-
+}
 .slider-tab #tab {
-  position: fixed;
   width: 90%;
   height: 76%;
+  transition: 1s;
 }
 
 .slider-tab #arrow a {
-  position: relative;
-  padding-top: 35vh;
+  margin-top: 35vh;
+  transition: 1s;
+  transform: rotate(0deg);
 }
 
 /* imaginary class for change control in js*/
 /*open tap*/
 .slider-tab-off {
-  right: 1px;
+  right: 1vw;
   display: flex;
   flex-direction: column;
-
 }
 
 .slider-tab-off #arrow a {
+  margin-top: 0vh;
   padding-top: 10px;
-  transition: 1S;
+  transition: 1s;
   cursor: pointer;
   color: Blue;
 }
@@ -330,7 +366,6 @@ input[type="search"]:hover {
 }
 
 .content-Max-Width {
-  transition: 1s;
   padding: 1px;
 }
 .containerControl {
@@ -345,43 +380,39 @@ scroll-container {
 }
 
 scroll-page {
-margin: 5%;
+  margin: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 
-scroll-page img{
-
+scroll-page img {
 }
 
-scroll-page h5{
+scroll-page h5 {
   padding-top: 15px;
   max-width: 70%;
 }
-scroll-page video{
-position: relative;
-min-width : 100%;
-min-height: 100%;
+scroll-page video {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+
 }
 
 /*Title multimedia*/
-scroll-page h2{
-color: Red;
-font-size: 35px;
-padding: 15px;
-font-family: 'Times New Roman',cursive;
-
-
-
+scroll-page h2 {
+  color: Red;
+  font-size: 35px;
+  padding: 15px;
+  font-family: "Times New Roman", cursive;
 }
 
 /*design inside tab */
-#tab {
 
+#tab {
   transition: 1s;
   width: auto;
   height: 83%;
@@ -427,6 +458,7 @@ font-family: 'Times New Roman',cursive;
   display: flex;
   flex-direction: row;
   align-items: center;
+
   color: white;
 }
 #tab-news li {
@@ -436,6 +468,7 @@ font-family: 'Times New Roman',cursive;
   padding: 10px;
   color: black;
 }
+
 
 ul li h2 {
   padding-left: 25%;
@@ -459,7 +492,7 @@ video {
 
 /*blank canvas for space between the footer*/
 .blankCanvas {
-  width: 100%;
+  width: 100vw;
   height: 200px;
 }
 
@@ -476,18 +509,17 @@ video {
 /******************/
 
 footer {
-  padding: 26px;
+
   left: 0;
   bottom: 0;
-  padding-left: 10px;
   background-color: black;
   position: fixed;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 85px;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -499,12 +531,15 @@ footer {
   margin-top: 1px;
 }
 
-ul {
+#links ul {
   list-style-type: none;
+
   margin: 10px;
-  padding: 20px;
+  padding: 5px;
 }
 
 #box-share ul li a {
+  padding-left: 2px;
   padding: 2px;
+  float: left;
 }
