@@ -5,10 +5,8 @@ var tab = document.getElementById("tab");
 var cont = document.getElementById("content");
 var point = document.getElementById("point");
 
-  text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, reiciendis ex expedita illo, sint nulla. Nisi quis dignissimos est rerum, amet vitae molestiae incidunt, dolorum excepturi. Magni, optio quas maiores!";
 
-
-tab.classList.toggle("slider-tab-off");
+tab.classList.toggle("slider-tab");
 cont.classList.toggle("content-Max-Width");
 //cont.classList.toggle("containerControl");
 point.classList.toggle("navigation-manual-reduction");
@@ -22,6 +20,7 @@ function tabMove() {
 }
 
 //funtion for navigation automatic
+//
 var counter = 1;
 setInterval(function () {
   document.getElementById("radio" + counter).checked = true;
@@ -29,4 +28,4 @@ setInterval(function () {
   if (counter > 4) {
     counter = 1;
   }
-},5000);
+}, 5000);
