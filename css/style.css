@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-
 body {
   margin: 0;
   margin-bottom: 40px;
@@ -15,7 +14,6 @@ body {
 /* TODO:  */ /****style header ****/
 /********************/
 header {
-  padding-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,7 +22,20 @@ header {
   position: relative;
   width: 100vw;
 
-  padding-bottom: 15px;
+}
+
+
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width: 480px) {
+  header {
+    width: auto;
+    }
+
+    #nav {
+      transition: 1s;
+      font-size: 14px;
+    }
+
 }
 
 header logo {
@@ -57,7 +68,6 @@ header ul {
 
 header li {
   float: left;
-
 }
 
 header li a {
@@ -83,7 +93,7 @@ header li a:hover {
 }
 
 #nav ul {
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
@@ -96,7 +106,7 @@ header li a:hover {
 #nav li:hover {
   transition: 1s;
   overflow: inherit;
-  z-index: 3
+  z-index: 3;
 }
 
 #nav ul ul {
@@ -161,18 +171,19 @@ input[type="search"]:hover {
 /*change color favicon search*/
 #searchcontainer i {
   transition: 1s;
-  padding-top: 40px;
-  padding-right: 45px;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  padding-right: 4vw;
   color: white;
 }
 
 /* TODO:  */ /****style Container ****/
 /********************/
 #content {
-  padding-top: 81px;
   display: flex;
   flex-direction: row;
-  padding: 15px;
+
+
 }
 
 #container {
@@ -180,16 +191,16 @@ input[type="search"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content: flex-start;
+
 }
 .slider {
-  width: auto;
+
   height: auto;
-  border-radius: 30px;
+  border-radius: 3vh;
   overflow: hidden;
   display: flex;
   background-color: #111;
-  padding-bottom: 30px; /* change value*/
+  padding-bottom: 3vh;
 }
 .slides {
   width: 500%;
@@ -206,7 +217,7 @@ input[type="search"]:hover {
 .slide img {
   width: 800px;
   height: auto;
-}
+  }
 /* navigation */
 
 /* manual*/
@@ -283,13 +294,12 @@ input[type="search"]:hover {
   align-items: center;
   box-shadow: 2px 10px 20px #999;
   overflow: hidden;
-
 }
 .slider-tab-off #arrow {
   transition: 1s;
   border-bottom: 3px solid Red;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 #arrow a {
   cursor: pointer;
@@ -300,10 +310,9 @@ input[type="search"]:hover {
   padding: 2%;
   margin-left: 40%;
   border: 3px solid Red;
-
 }
 
-#line{
+#line {
   position: relative;
   padding: 3px;
   border-bottom: 10px solid #111;
@@ -323,11 +332,12 @@ input[type="search"]:hover {
 /* control tab for var js changevalue 0% to 28%*/
 /*close tap*/
 .slider-tab {
+
   transition: 1s;
   right: -47vw;
-
 }
 .slider-tab #tab {
+
   width: 50vw;
   height: 82vh;
   transition: 1s;
@@ -342,7 +352,8 @@ input[type="search"]:hover {
 /* imaginary class for change control in js*/
 /*open tap*/
 .slider-tab-off {
-  right: .1vw;
+
+  right: 0.1vw;
   display: flex;
   flex-direction: column;
 }
@@ -401,15 +412,13 @@ scroll-page video {
   position: relative;
   min-width: 50vw;
   min-height: 15vh;
-
 }
 
 /*Title multimedia*/
 scroll-page h2 {
   color: Red;
-  font-size: 35px;
-  padding: 15px;
-  font-family: "Times New Roman", cursive;
+  font-size: 8vw;
+  font-family: "Times New Roman";
 }
 
 /*design inside tab */
@@ -441,11 +450,15 @@ scroll-page h2 {
   margin-right: 30px;
   margin-top: 10px;
 }
+
+#tab-news ul{
+margin: 0;
+}
 #tab-news {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+
   color: Red;
 }
 #tab-news h3 {
@@ -460,7 +473,6 @@ scroll-page h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 #tab-news li {
   display: flex;
@@ -470,16 +482,11 @@ scroll-page h2 {
   color: black;
 }
 
-@media (max-width:480px)  {
 /* smartphones, Android phones, landscape iPhone */
-#tab-news ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-
+@media (max-width: 480px) {
+  #tab-news ul {
+    flex-direction: column;
+  }
 }
 
 ul li h2 {
@@ -509,7 +516,6 @@ video {
   cursor: default;
 }
 
-
 .blankCanvas a {
   position: absolute;
   width: 100vw;
@@ -532,12 +538,20 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width: 480px) {
+  footer {
+    width: auto;
+    height: auto;
+    }
 
 }
 
 #links {
   float: left;
-width: 23vw;
+  width: 23vw;
 }
 
 #copyR {
@@ -547,16 +561,15 @@ width: 23vw;
   align-items: center;
 }
 
-
 #links ul {
   list-style-type: none;
   margin: 10px;
   padding: 5px;
 }
-#box-share ul li{
+#box-share ul li {
   color: #111;
-  width:10vw;
-margin-right: 5vw;
+  width: 10vw;
+  margin-right: 5vw;
 }
 #box-share ul li a {
   padding-left: 2px;
