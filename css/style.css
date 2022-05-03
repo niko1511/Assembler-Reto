@@ -96,7 +96,7 @@ header li a:hover {
 #nav li:hover {
   transition: 1s;
   overflow: inherit;
-  z-index: 3;
+  z-index: 3
 }
 
 #nav ul ul {
@@ -255,7 +255,7 @@ input[type="search"]:hover {
 }
 
 .manual-btn:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 5vw;
 }
 
 #radio1:checked ~ .first {
@@ -288,7 +288,7 @@ input[type="search"]:hover {
 .slider-tab-off #arrow {
   transition: 1s;
   border-bottom: 3px solid Red;
-
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 #arrow a {
@@ -461,7 +461,6 @@ scroll-page h2 {
   flex-direction: row;
   align-items: center;
 
-  color: white;
 }
 #tab-news li {
   display: flex;
@@ -471,6 +470,17 @@ scroll-page h2 {
   color: black;
 }
 
+@media (max-width:480px)  {
+/* smartphones, Android phones, landscape iPhone */
+#tab-news ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+}
 
 ul li h2 {
   padding-left: 25%;
