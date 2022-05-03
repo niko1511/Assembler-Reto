@@ -13,7 +13,7 @@ body {
 /* TODO:  */ /****style header ****/
 /********************/
 header {
-  font-size: 2.2vw;
+  font-size: 2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,7 +81,7 @@ header li a:hover {
 /*change style font*/
 #nav {
   font-family: "Roboto Mono", monospace;
-  font-size: 2vw;
+  font-size: 3vw;
   z-index: 2;
 }
 
@@ -106,7 +106,7 @@ header li a:hover {
 
 #nav ul ul {
     width: 25vw;
-  
+
   position: absolute;
   left: 0;
   background: #333;
@@ -140,7 +140,7 @@ header li a:hover {
 input[type="search"] {
   position: absolute;
 
-  top: 2vh;
+  top: 5px;
   right: 20px;
   border-radius: 20px;
   color: white;
@@ -217,7 +217,7 @@ input[type="search"]:hover {
 /* manual*/
 .navigation-manual {
   position: absolute;
-  width: 95vw;
+  width: 100vw;
   margin-top: 185px;
   display: flex;
   justify-content: center;
@@ -376,7 +376,7 @@ input[type="search"]:hover {
 }
 
 .content-Max-Width {
-  padding: 1vw;
+
 }
 .containerControl {
   transition: 1s;
@@ -415,7 +415,7 @@ scroll-page video {
 /*Title multimedia*/
 scroll-page h2 {
   color: Red;
-  font-size: 10vw;
+  font-size: 5vw;
   font-family: "Times New Roman";
 }
 
