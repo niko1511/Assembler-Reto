@@ -323,12 +323,12 @@ input[type="search"]:hover {
 /*close tap*/
 .slider-tab {
   transition: 1s;
-  right: -84.5vw;
+  right: -47vw;
 
 }
 .slider-tab #tab {
   width: 50vw;
-  height: 76%;
+  height: 82vh;
   transition: 1s;
 }
 
@@ -352,6 +352,7 @@ input[type="search"]:hover {
   transition: 1s;
   cursor: pointer;
   color: Blue;
+  transform: rotate(180deg);
 }
 .slider-tab-off #arrow #logo1 {
   position: relative;
@@ -493,14 +494,14 @@ video {
 /*blank canvas for space between the footer*/
 .blankCanvas {
   width: 100vw;
-  height: 200px;
+  height: 16vh;
+  cursor: default;
 }
+
 
 .blankCanvas a {
   position: absolute;
-  left: 50px;
-  padding: 7px;
-  width: 87%;
+  width: 100vw;
   background-color: Red;
   text-align: center;
 }
