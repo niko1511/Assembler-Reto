@@ -327,7 +327,7 @@ input[type="search"]:hover {
 
 }
 .slider-tab #tab {
-  width: 90%;
+  width: 50vw;
   height: 76%;
   transition: 1s;
 }
