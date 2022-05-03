@@ -8,12 +8,12 @@ body {
   margin: 0;
   margin-bottom: 40px;
   overflow-x: hidden;
-
 }
 
 /* TODO:  */ /****style header ****/
 /********************/
 header {
+  font-size: 2.2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,27 +21,19 @@ header {
   background-color: #333;
   position: relative;
   width: 100vw;
-
 }
-
 
 /* smartphones, Android phones, landscape iPhone */
 @media (max-width: 480px) {
   header {
     width: auto;
-    }
-
-    #nav {
-      transition: 1s;
-      font-size: 14px;
-    }
-
+  }
 }
 
 header logo {
-  padding: 20px 20px;
+  padding: 3.5vw 3.5vw;
   background-color: #111;
-  border-radius: 50px;
+  border-radius: 5vw;
   color: white;
   cursor: none;
 }
@@ -89,6 +81,7 @@ header li a:hover {
 /*change style font*/
 #nav {
   font-family: "Roboto Mono", monospace;
+  font-size: 2vw;
   z-index: 2;
 }
 
@@ -102,15 +95,18 @@ header li a:hover {
   float: left;
   list-style-type: none;
   overflow: hidden;
+
 }
 #nav li:hover {
+
   transition: 1s;
   overflow: inherit;
   z-index: 3;
 }
 
 #nav ul ul {
-  width: 100%;
+    width: 25vw;
+  
   position: absolute;
   left: 0;
   background: #333;
@@ -120,7 +116,8 @@ header li a:hover {
 #nav ul ul a {
   text-align: center;
   padding: 2px 2px;
-  font-size: 13px;
+  font-size: 2.2vw;
+  width: 25vw;
 }
 #nav ul ul a:hover {
   position: relative;
@@ -142,7 +139,8 @@ header li a:hover {
 
 input[type="search"] {
   position: absolute;
-  top: 20px;
+
+  top: 2vh;
   right: 20px;
   border-radius: 20px;
   color: white;
@@ -150,7 +148,7 @@ input[type="search"] {
   letter-spacing: 2px;
   text-shadow: 0 0 2px black;
   height: 30px;
-  width: 71px;
+  width: 7vw;
   transition: 1s;
   z-index: 2;
 }
@@ -182,8 +180,6 @@ input[type="search"]:hover {
 #content {
   display: flex;
   flex-direction: row;
-
-
 }
 
 #container {
@@ -191,16 +187,14 @@ input[type="search"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .slider {
-
   height: auto;
   border-radius: 3vh;
   overflow: hidden;
   display: flex;
   background-color: #111;
-  padding-bottom: 3vh;
+  padding-bottom: 30px;
 }
 .slides {
   width: 500%;
@@ -217,13 +211,13 @@ input[type="search"]:hover {
 .slide img {
   width: 800px;
   height: auto;
-  }
+}
 /* navigation */
 
 /* manual*/
 .navigation-manual {
   position: absolute;
-  width: 95%;
+  width: 95vw;
   margin-top: 185px;
   display: flex;
   justify-content: center;
@@ -308,7 +302,7 @@ input[type="search"]:hover {
 .slider-tab-off #arrow a {
   padding-top: 10px;
   padding: 2%;
-  margin-left: 40%;
+  margin-left: 20vw;
   border: 3px solid Red;
 }
 
@@ -316,7 +310,7 @@ input[type="search"]:hover {
   position: relative;
   padding: 3px;
   border-bottom: 10px solid #111;
-  z-index: 0;
+  z-index: 2;
 }
 
 #arrow #logo1 {
@@ -332,12 +326,10 @@ input[type="search"]:hover {
 /* control tab for var js changevalue 0% to 28%*/
 /*close tap*/
 .slider-tab {
-
   transition: 1s;
   right: -47vw;
 }
 .slider-tab #tab {
-
   width: 50vw;
   height: 82vh;
   transition: 1s;
@@ -352,15 +344,18 @@ input[type="search"]:hover {
 /* imaginary class for change control in js*/
 /*open tap*/
 .slider-tab-off {
-
   right: 0.1vw;
   display: flex;
   flex-direction: column;
 }
 
+.slider-tab-off #arrow {
+  padding: 1vw;
+}
+
 .slider-tab-off #arrow a {
   margin-top: 0vh;
-  padding-top: 10px;
+  padding-top: 1vh;
   transition: 1s;
   cursor: pointer;
   color: Blue;
@@ -368,10 +363,12 @@ input[type="search"]:hover {
 }
 .slider-tab-off #arrow #logo1 {
   position: relative;
+  font-size: 3vw;
   color: white;
 }
 
 .slider-tab-off #arrow #logo2 {
+  font-size: 4vw;
   position: relative;
   transition: 1s;
   padding-right: 50vw;
@@ -379,7 +376,7 @@ input[type="search"]:hover {
 }
 
 .content-Max-Width {
-  padding: 1px;
+  padding: 1vw;
 }
 .containerControl {
   transition: 1s;
@@ -412,12 +409,13 @@ scroll-page video {
   position: relative;
   min-width: 50vw;
   min-height: 15vh;
+  z-index: 0;
 }
 
 /*Title multimedia*/
 scroll-page h2 {
   color: Red;
-  font-size: 8vw;
+  font-size: 10vw;
   font-family: "Times New Roman";
 }
 
@@ -437,6 +435,7 @@ scroll-page h2 {
 }
 
 #tab-section {
+  font-size: 2.2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,10 +450,11 @@ scroll-page h2 {
   margin-top: 10px;
 }
 
-#tab-news ul{
-margin: 0;
+#tab-news ul {
+  margin: 0;
 }
 #tab-news {
+  font-size: 2.2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -512,7 +512,7 @@ video {
 /*blank canvas for space between the footer*/
 .blankCanvas {
   width: 100vw;
-  height: 16vh;
+  height: 17vh;
   cursor: default;
 }
 
@@ -532,7 +532,7 @@ footer {
   background-color: black;
   position: fixed;
   width: 100vw;
-  height: 85px;
+  height: 10vh;
   color: white;
   display: flex;
   flex-direction: row;
@@ -545,16 +545,17 @@ footer {
   footer {
     width: auto;
     height: auto;
-    }
-
+  }
 }
 
 #links {
+  font-size: 1.5vw;
   float: left;
   width: 23vw;
 }
 
 #copyR {
+  font-size: 1.5vw;
   margin-top: 1px;
   display: flex;
   flex-direction: column;
@@ -570,6 +571,7 @@ footer {
   color: #111;
   width: 10vw;
   margin-right: 5vw;
+  font-size: 2vw;
 }
 #box-share ul li a {
   padding-left: 2px;
